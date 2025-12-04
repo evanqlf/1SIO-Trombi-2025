@@ -288,3 +288,22 @@
     transform: scale(2);
     box-shadow: 0 2px white;
 }
+
+#LUTAUD{color : gold ; 
+	background-color: black;
+	color: gold;
+  background-color: black;
+  padding: 10px;
+  border: 3px solid gold;
+  border-radius: 10px;
+  box-shadow: 0 0 6px gold;
+}
+
+#LUTAUD img {
+  transition: transform 0.8s ease-in-out,
+              box-shadow 0.8s ease-in-out;
+}
+#LUTAUD:hover img {
+  transform: rotate(360deg);
+  box-shadow: 0 0 20px gold, 0 0 30px gold inset;
+}
