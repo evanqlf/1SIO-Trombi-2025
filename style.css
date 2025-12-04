@@ -11,10 +11,33 @@
         background-color: #a3a2a2;
     }
 
-p{
-    text-align: cente;
+#BELROSE p{
+    text-align: center;
     font-weight: bold;
 }
+
+
+#GUERIPEL {
+    background-color: blanchedalmond;
+    color: blue;
+}
+
+#GUERIPEL img {
+    transition: transform 0.6s ease;
+}
+
+#GUERIPEL img:hover {
+    transform: rotate(360deg);
+}
+
+/* Ajout du changement de couleur au survol */
+#GUERIPEL:hover {
+    background-color: lightblue; /* nouvelle couleur au survol */
+    color: red; /* texte change de couleur */
+}
+#MAREY_VAIRELLES{
+  background-color : gold; }
+
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 /* ========== THOUVEREZ ========== */
@@ -82,13 +105,7 @@ p{
 }
 
 /* ========== GUERIPEL ========== */
-#GUERIPEL {
-    background-color: brown;
-}
 
-#GUERIPEL p {
-    color: aquamarine;
-}
 
 /* ========== MAREY_VAIRELLES ========== */
 #MAREY_VAIRELLES {
@@ -108,8 +125,8 @@ p{
             #008026, /* vert */
             #004dff, /* bleu */
             #750787  /* violet */
-    );
 }
+
 
 #DANGUIN img {
     border-radius: 10px;
@@ -236,4 +253,76 @@ p{
     border-color: yellow;
     cursor: pointer;
     z-index: 10;
+}
+
+/* ========== ZABAWSKI ========== */
+#ZABAWSKI {
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #000000, #ff8c00);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ZABAWSKI img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#ZABAWSKI:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 16px rgba(255, 140, 0, 0.5);
+}
+
+#MAREY_VAIRELLES {
+    background-color: gold;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 6px white;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.5s ease;
+}
+
+/* Effet arc-en-ciel au survol */
+#MAREY_VAIRELLES:hover {
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        purple
+    );
+    color: white;
+}
+
+/* Bouton qui s’enfonce */
+#MAREY_VAIRELLES:active {
+    transform: scale(2);
+    box-shadow: 0 2px white;
+}
+
+#LUTAUD{color : gold ; 
+	background-color: black;
+	color: gold;
+  background-color: black;
+  padding: 10px;
+  border: 3px solid gold;
+  border-radius: 10px;
+  box-shadow: 0 0 6px gold;
+}
+
+#LUTAUD img {
+  transition: transform 0.8s ease-in-out,
+              box-shadow 0.8s ease-in-out;
+}
+#LUTAUD:hover img {
+  transform: rotate(360deg);
+  box-shadow: 0 0 20px gold, 0 0 30px gold inset;
 }
